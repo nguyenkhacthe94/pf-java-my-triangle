@@ -33,8 +33,8 @@ public class MyTriangle {
             if (side3 <= 0) System.out.println("\nInvalid side");
         } while (side3 <=0);
         check = isValid(side1, side2, side3);
-        if (check == false) System.out.println("\nInvalid side");
-        } while (check == false);
+        if (!check) System.out.println("\nInvalid side");
+        } while (!check);
         double area = area(side1, side2, side3);
         System.out.print("Area = " + area);
     }
